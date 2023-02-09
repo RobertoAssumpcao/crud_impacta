@@ -1,3 +1,4 @@
+import { CentroCustoService } from './../../services/centro-custo.service';
 import { CentroCusto } from './../../interface/centroCusto';
 import { Component, OnInit } from '@angular/core';
 
@@ -10,9 +11,12 @@ export class ListarCentroCustoComponent implements OnInit {
 
   listacentroCusto: CentroCusto[] = [];
 
-  constructor() { }
+  constructor(private service: CentroCustoService) { }
 
   ngOnInit(): void {
+    this.service.listar().subscribe((listaCentroCusto) => {
+      this.listacentroCusto = listaCentroCusto;
+    })
   }
 
 }
