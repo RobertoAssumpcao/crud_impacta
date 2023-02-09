@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CriarCentroCustoComponent implements OnInit {
 
+  centroCusto = [];
+
   constructor() { }
 
   ngOnInit(): void {
