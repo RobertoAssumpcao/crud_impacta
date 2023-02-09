@@ -17,9 +17,4 @@ export class CriarCentroCustoComponent implements OnInit {
   criarCentruCusto() {
 
   }
-
-  cancelar() {
-
-  }
-
 }
