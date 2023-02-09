@@ -14,4 +14,12 @@ export class CriarCentroCustoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  criarCentruCusto() {
+
+  }
+
+  cancelar() {
+
+  }
+
 }

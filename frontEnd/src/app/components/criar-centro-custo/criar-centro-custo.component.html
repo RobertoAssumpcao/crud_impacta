@@ -2,23 +2,23 @@
   <form action="">
     <div class="mb-3">
       <label for="codigo" class="form-label">Codigo: </label>
-      <input type="number" class="form-control" id="codigo">
+      <input type="number" class="form-control" id="codigo" [(ngModel)]="centroCusto">
     </div>
     <div class="mb-3">
       <label for="Nome" class="form-label">Nome: </label>
-      <input type="text" class="form-control" id="Nome">
+      <input type="text" class="form-control" id="Nome" [(ngModel)]="centroCusto">
     </div>
     <div class="mb-3">
       <label for="DataInicial" class="form-label">Data Inicial: </label>
-      <input type="date" class="form-control" id="DataInicial">
+      <input type="date" class="form-control" id="DataInicial" [(ngModel)]="centroCusto">
     </div>
     <div class="mb-3">
       <label for="DataFinal" class="form-label">Data Final: </label>
-      <input type="date" class="form-control" id="DataFinal">
+      <input type="date" class="form-control" id="DataFinal" [(ngModel)]="centroCusto">
     </div>
     <div class="mb-3">
-      <button type="button" class="btn btn-outline-primary m-2">Salvar</button>
-      <button type="button" class="btn btn-outline-danger">Cancelar</button>
+      <button type="button" class="btn btn-outline-primary me-2" (click)="criarCentruCusto()">Salvar</button>
+      <button type="button" class="btn btn-outline-danger" (click)="cancelar()">Cancelar</button>
     </div>
   </form>
 </section>
