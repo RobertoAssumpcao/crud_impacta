@@ -29,7 +29,7 @@ namespace Crud
                 options.AddPolicy("MyAllowedOrigins",
                     policy =>
                     {
-                        policy.WithOrigins("http://localhost:4200") // note the port is included 
+                        policy.WithOrigins("http://localhost:4200")
                             .AllowAnyHeader()
                             .AllowAnyMethod();
                     });

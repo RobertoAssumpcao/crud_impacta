@@ -2,23 +2,23 @@
   <form action="">
     <div class="mb-3">
       <label for="codigo" class="form-label">Codigo: </label>
-      <input type="number" class="form-control" id="codigo" [(ngModel)]="centroCusto">
+      <input type="number" class="form-control" id="codigo" [(ngModel)]="centroCusto.codigo" name="codigo">
     </div>
     <div class="mb-3">
-      <label for="Nome" class="form-label">Nome: </label>
-      <input type="text" class="form-control" id="Nome" [(ngModel)]="centroCusto">
+      <label for="nome" class="form-label">Nome: </label>
+      <input type="text" class="form-control" id="nome" [(ngModel)]="centroCusto.nome" name="nome">
     </div>
     <div class="mb-3">
-      <label for="DataInicial" class="form-label">Data Inicial: </label>
-      <input type="date" class="form-control" id="DataInicial" [(ngModel)]="centroCusto">
+      <label for="dataInicial" class="form-label">Data Inicial: </label>
+      <input type="date" class="form-control" id="dataInicial" [(ngModel)]="centroCusto.dataInicial" name="dataInicial">
     </div>
     <div class="mb-3">
-      <label for="DataFinal" class="form-label">Data Final: </label>
-      <input type="date" class="form-control" id="DataFinal" [(ngModel)]="centroCusto">
+      <label for="dataFinal" class="form-label">Data Final: </label>
+      <input type="date" class="form-control" id="dataFinal" [(ngModel)]="centroCusto.dataFinal" name="dataFinal">
     </div>
     <div class="mb-3">
       <button type="button" class="btn btn-outline-primary me-2" (click)="criarCentruCusto()">Salvar</button>
-      <button type="button" class="btn btn-outline-danger" routerLink="/listaCentroCustos">Cancelar</button>
+      <button type="button" class="btn btn-outline-danger" (click)="cancelar()">Cancelar</button>
     </div>
   </form>
 </section>

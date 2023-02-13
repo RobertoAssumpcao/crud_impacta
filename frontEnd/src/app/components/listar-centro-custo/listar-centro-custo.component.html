@@ -7,14 +7,18 @@
         <th scope="col">Nome</th>
         <th scope="col">Data Inicial</th>
         <th scope="col">Data Fim</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Excluir</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let centroCusto of listacentroCusto">
         <th scope="row">{{centroCusto.codigo}}</th>
         <td>{{centroCusto.nome}}</td>
-        <td>{{centroCusto.dataInicial}}</td>
-        <td>{{centroCusto.dataFim}}</td>
+        <td>{{centroCusto.dataInicial | date:'dd/MM/yyyy'}}</td>
+        <td>{{centroCusto.dataFinal | date:'dd/MM/yyyy'}}</td>
+        <td></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

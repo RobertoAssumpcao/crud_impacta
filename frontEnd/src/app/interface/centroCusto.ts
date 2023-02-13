@@ -1,7 +1,7 @@
 export interface CentroCusto {
-  id: number
+  id?: number
   codigo: number
   nome: string
   dataInicial: Date
-  dataFim: Date
+  dataFinal: Date
 }

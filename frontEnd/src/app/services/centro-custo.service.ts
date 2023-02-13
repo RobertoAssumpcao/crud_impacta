@@ -15,4 +15,8 @@ export class CentroCustoService {
   listar(): Observable<CentroCusto[]> {
     return this.http.get<CentroCusto[]>(this.API)
   }
+
+  criar(centroCusto: CentroCusto): Observable<CentroCusto> {
+    return this.http.post<CentroCusto>(this.API, centroCusto)
+  }
 }
