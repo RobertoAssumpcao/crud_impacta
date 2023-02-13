@@ -8,12 +8,14 @@ import { CriarCentroCustoComponent } from './components/criar-centro-custo/criar
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { ListarCentroCustoComponent } from './components/listar-centro-custo/listar-centro-custo.component';
+import { ExcluirCentroCustoComponent } from './components/excluir-centro-custo/excluir-centro-custo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CriarCentroCustoComponent,
-    ListarCentroCustoComponent
+    ListarCentroCustoComponent,
+    ExcluirCentroCustoComponent
   ],
   imports: [
     BrowserModule,

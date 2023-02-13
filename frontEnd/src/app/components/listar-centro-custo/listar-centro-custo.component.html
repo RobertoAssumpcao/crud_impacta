@@ -1,5 +1,11 @@
 <section>
-  <button type="button" class="btn btn-secondary m-5" routerLink="/criarCentroCusto">Adicionar</button>
+  <button
+    type="button"
+    class="btn btn-secondary m-5"
+    routerLink="/criarCentroCusto"
+  >
+    Adicionar
+  </button>
   <table class="table table-success table-striped">
     <thead>
       <tr>
@@ -13,12 +19,20 @@
     </thead>
     <tbody>
       <tr *ngFor="let centroCusto of listacentroCusto">
-        <th scope="row">{{centroCusto.codigo}}</th>
-        <td>{{centroCusto.nome}}</td>
-        <td>{{centroCusto.dataInicial | date:'dd/MM/yyyy'}}</td>
-        <td>{{centroCusto.dataFinal | date:'dd/MM/yyyy'}}</td>
-        <td></td>
-        <td></td>
+        <th scope="row">{{ centroCusto.codigo }}</th>
+        <td>{{ centroCusto.nome }}</td>
+        <td>{{ centroCusto.dataInicial | date : "dd/MM/yyyy" }}</td>
+        <td>{{ centroCusto.dataFinal | date : "dd/MM/yyyy" }}</td>
+        <td>
+          <button class="botao-editar">
+            <img src="../../../assets/icone-editar.png" />
+          </button>
+        </td>
+        <td>
+          <button class="botao-excluir">
+            <img src="../../../assets/icone-excluir.png" />
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>

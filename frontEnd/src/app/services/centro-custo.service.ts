@@ -19,4 +19,15 @@ export class CentroCustoService {
   criar(centroCusto: CentroCusto): Observable<CentroCusto> {
     return this.http.post<CentroCusto>(this.API, centroCusto)
   }
+
+  excluir(id: number): Observable<CentroCusto>{
+    const url = `${this.API}/delete/${id}`
+    return this.http.delete<CentroCusto>(url)
+  }
+
+  buscarPorId(id: number): Observable<CentroCusto> {
+    const url = `${this.API}/buscarPorId/${id}`
+    return this.http.get<CentroCusto>(url)
+  }
+
 }
